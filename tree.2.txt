@@ -1,0 +1,48 @@
+.
+├── Android.mk
+├── README.md
+├── build.sh
+├── cred.c
+├── cred.h
+├── device_database
+│   ├── Android.mk
+│   ├── Makefile
+│   ├── README.md
+│   ├── db_init.sql
+│   ├── device.db
+│   ├── device_database.c
+│   ├── device_database.h
+│   └── libsqlite
+├── kallsyms.c
+├── kallsyms.h
+├── libexploit
+│   ├── Android.mk
+│   ├── exploit.c
+│   ├── exploit.h
+│   ├── libdiagexploit
+│   ├── libexploit_utils
+│   ├── libfb_mem_exploit
+│   ├── libfj_hdcp_exploit
+│   ├── libfutex_exploit
+│   ├── libget_user_exploit
+│   ├── libmsm_acdb_exploit
+│   ├── libmsm_cameraconfig_exploit
+│   ├── libperf_event_exploit
+│   ├── libpingpong_exploit
+│   ├── libput_user_exploit
+│   └── mmap.c
+├── libkallsyms
+│   ├── Android.mk
+│   ├── kallsyms_in_memory.c
+│   └── kallsyms_in_memory.h
+├── main.c
+├── mm.c
+├── mm.h
+├── obj
+│   └── local
+├── ptmx.c
+├── ptmx.h
+├── tree.2.txt
+└── tree.txt
+
+17 directories, 28 files

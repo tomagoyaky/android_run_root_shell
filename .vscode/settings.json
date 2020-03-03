@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "device_database.h": "c",
+        "stdint.h": "c",
+        "exploit_utils.h": "c"
+    }
+}

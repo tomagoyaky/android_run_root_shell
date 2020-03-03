@@ -1,0 +1,187 @@
+.
+├── Android.mk
+├── README.md
+├── build.sh
+├── cred.c
+├── cred.h
+├── device_database
+│   ├── Android.mk
+│   ├── Makefile
+│   ├── README.md
+│   ├── db_init.sql
+│   ├── device.db
+│   ├── device_database.c
+│   ├── device_database.h
+│   └── libsqlite
+│       ├── Android.mk
+│       ├── CleanSpec.mk
+│       ├── android
+│       │   ├── Android.mk
+│       │   ├── NOTICE
+│       │   ├── OldPhoneNumberUtils.cpp
+│       │   ├── PhoneNumberUtils.cpp
+│       │   ├── PhoneNumberUtils.h
+│       │   ├── PhoneNumberUtilsTest.cpp
+│       │   ├── sqlite3_android.cpp
+│       │   └── sqlite3_android.h
+│       ├── dist
+│       │   ├── Android.mk
+│       │   ├── Android.patch
+│       │   ├── MODULE_LICENSE_PUBLIC_DOMAIN
+│       │   ├── NOTICE
+│       │   ├── README-Android
+│       │   ├── orig
+│       │   │   ├── shell.c
+│       │   │   ├── sqlite3.c
+│       │   │   ├── sqlite3.h
+│       │   │   └── sqlite3ext.h
+│       │   ├── shell.c
+│       │   ├── sqlite3.c
+│       │   ├── sqlite3.h
+│       │   ├── sqlite3ext.h
+│       │   └── version
+│       └── sqlite3.h
+├── kallsyms.c
+├── kallsyms.h
+├── libexploit
+│   ├── Android.mk
+│   ├── exploit.c
+│   ├── exploit.h
+│   ├── libdiagexploit
+│   │   ├── Android.mk
+│   │   ├── diag.c
+│   │   └── diag.h
+│   ├── libexploit_utils
+│   │   ├── Android.mk
+│   │   ├── exploit_utils.h
+│   │   ├── hack_addr_limit.c
+│   │   ├── kernel_memory_by_pipe.c
+│   │   └── protect_from_oom_killer.c
+│   ├── libfb_mem_exploit
+│   │   ├── Android.mk
+│   │   ├── fb_mem.c
+│   │   └── fb_mem.h
+│   ├── libfj_hdcp_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── fj_hdcp.c
+│   │   └── fj_hdcp.h
+│   ├── libfutex_exploit
+│   │   ├── Android.mk
+│   │   ├── exploit.c
+│   │   ├── futex.c
+│   │   └── futex.h
+│   ├── libget_user_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── get_user.c
+│   │   └── get_user.h
+│   ├── libmsm_acdb_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── acdb.c
+│   │   └── acdb.h
+│   ├── libmsm_cameraconfig_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── msm_cameraconfig.c
+│   │   └── msm_cameraconfig.h
+│   ├── libperf_event_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── perf_event.c
+│   │   ├── perf_event.h
+│   │   ├── perf_swevent.c
+│   │   └── perf_swevent.h
+│   ├── libpingpong_exploit
+│   │   ├── Android.mk
+│   │   ├── exploit.c
+│   │   ├── pingpong.c
+│   │   └── pingpong.h
+│   ├── libput_user_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── put_user.c
+│   │   └── put_user.h
+│   └── mmap.c
+├── libkallsyms
+│   ├── Android.mk
+│   ├── kallsyms_in_memory.c
+│   └── kallsyms_in_memory.h
+├── main.c
+├── mm.c
+├── mm.h
+├── obj
+│   └── local
+│       └── arm64-v8a
+│           ├── libdiagexploit.a
+│           ├── libexploit.a
+│           ├── libfb_mem_exploit.a
+│           ├── libfj_hdcp_exploit.a
+│           ├── libget_user_exploit.a
+│           ├── libkallsyms.a
+│           ├── libmsm_acdb_exploit.a
+│           ├── libmsm_cameraconfig_exploit.a
+│           ├── libperf_event_exploit.a
+│           ├── libpingpong_exploit.a
+│           ├── libput_user_exploit.a
+│           └── objs
+│               ├── diagexploit
+│               │   ├── diag.o
+│               │   └── diag.o.d
+│               ├── exploit
+│               │   ├── exploit.o
+│               │   ├── exploit.o.d
+│               │   ├── mmap.o
+│               │   └── mmap.o.d
+│               ├── fb_mem_exploit
+│               │   ├── fb_mem.o
+│               │   └── fb_mem.o.d
+│               ├── fj_hdcp_exploit
+│               │   ├── fj_hdcp.o
+│               │   └── fj_hdcp.o.d
+│               ├── futex_exploit
+│               │   ├── exploit.o.d
+│               │   ├── futex.o
+│               │   └── futex.o.d
+│               ├── get_user_exploit
+│               │   ├── get_user.o
+│               │   └── get_user.o.d
+│               ├── kallsyms
+│               │   ├── kallsyms_in_memory.o
+│               │   └── kallsyms_in_memory.o.d
+│               ├── msm_acdb_exploit
+│               │   ├── acdb.o
+│               │   └── acdb.o.d
+│               ├── msm_cameraconfig_exploit
+│               │   ├── msm_cameraconfig.o
+│               │   └── msm_cameraconfig.o.d
+│               ├── perf_event_exploit
+│               │   ├── perf_event.o
+│               │   ├── perf_event.o.d
+│               │   ├── perf_swevent.o
+│               │   └── perf_swevent.o.d
+│               ├── pingpong_exploit
+│               │   ├── exploit.o
+│               │   ├── exploit.o.d
+│               │   ├── pingpong.o
+│               │   └── pingpong.o.d
+│               ├── put_user_exploit
+│               │   ├── put_user.o
+│               │   └── put_user.o.d
+│               └── run_root_shell
+│                   ├── cred.o
+│                   ├── cred.o.d
+│                   ├── kallsyms.o
+│                   ├── kallsyms.o.d
+│                   ├── main.o
+│                   ├── main.o.d
+│                   ├── mm.o
+│                   ├── mm.o.d
+│                   ├── ptmx.o
+│                   └── ptmx.o.d
+├── ptmx.c
+├── ptmx.h
+└── tree.txt
+
+35 directories, 149 files

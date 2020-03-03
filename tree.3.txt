@@ -1,0 +1,100 @@
+.
+├── Android.mk
+├── README.md
+├── build.sh
+├── cred.c
+├── cred.h
+├── device_database
+│   ├── Android.mk
+│   ├── Makefile
+│   ├── README.md
+│   ├── db_init.sql
+│   ├── device.db
+│   ├── device_database.c
+│   ├── device_database.h
+│   └── libsqlite
+│       ├── Android.mk
+│       ├── CleanSpec.mk
+│       ├── android
+│       ├── dist
+│       └── sqlite3.h
+├── kallsyms.c
+├── kallsyms.h
+├── libexploit
+│   ├── Android.mk
+│   ├── exploit.c
+│   ├── exploit.h
+│   ├── libdiagexploit
+│   │   ├── Android.mk
+│   │   ├── diag.c
+│   │   └── diag.h
+│   ├── libexploit_utils
+│   │   ├── Android.mk
+│   │   ├── exploit_utils.h
+│   │   ├── hack_addr_limit.c
+│   │   ├── kernel_memory_by_pipe.c
+│   │   └── protect_from_oom_killer.c
+│   ├── libfb_mem_exploit
+│   │   ├── Android.mk
+│   │   ├── fb_mem.c
+│   │   └── fb_mem.h
+│   ├── libfj_hdcp_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── fj_hdcp.c
+│   │   └── fj_hdcp.h
+│   ├── libfutex_exploit
+│   │   ├── Android.mk
+│   │   ├── exploit.c
+│   │   ├── futex.c
+│   │   └── futex.h
+│   ├── libget_user_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── get_user.c
+│   │   └── get_user.h
+│   ├── libmsm_acdb_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── acdb.c
+│   │   └── acdb.h
+│   ├── libmsm_cameraconfig_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── msm_cameraconfig.c
+│   │   └── msm_cameraconfig.h
+│   ├── libperf_event_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── perf_event.c
+│   │   ├── perf_event.h
+│   │   ├── perf_swevent.c
+│   │   └── perf_swevent.h
+│   ├── libpingpong_exploit
+│   │   ├── Android.mk
+│   │   ├── exploit.c
+│   │   ├── pingpong.c
+│   │   └── pingpong.h
+│   ├── libput_user_exploit
+│   │   ├── Android.mk
+│   │   ├── README.md
+│   │   ├── put_user.c
+│   │   └── put_user.h
+│   └── mmap.c
+├── libkallsyms
+│   ├── Android.mk
+│   ├── kallsyms_in_memory.c
+│   └── kallsyms_in_memory.h
+├── main.c
+├── mm.c
+├── mm.h
+├── obj
+│   └── local
+│       └── arm64-v8a
+├── ptmx.c
+├── ptmx.h
+├── tree.2.txt
+├── tree.3.txt
+└── tree.txt
+
+20 directories, 77 files

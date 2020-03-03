@@ -92,7 +92,7 @@ struct task_struct_partial {
 static inline struct thread_info *
 current_thread_info(void)
 {
-  register unsigned long sp asm ("sp");
+  register unsigned long sp __asm__ ("sp");
   return (struct thread_info *)(sp & ~(THREAD_SIZE - 1));
 }
 
